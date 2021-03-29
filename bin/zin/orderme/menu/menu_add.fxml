@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0"
+	prefWidth="384.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="zin.orderme.menu.MenuAddController">
+	<children>
+		<Label alignment="CENTER" layoutX="12.0" layoutY="14.0"
+			prefHeight="77.0" prefWidth="354.0" text="메뉴 편집화면"
+			textAlignment="CENTER">
+			<font>
+				<Font name="System Bold" size="35.0" />
+			</font>
+		</Label>
+		<Group layoutX="75.0" layoutY="93.0">
+			<children>
+				<Label layoutX="-27.0" layoutY="6.0" prefHeight="25.0"
+					prefWidth="66.0" text="메뉴이름 : " />
+				<Label layoutX="-28.0" layoutY="51.0" prefHeight="25.0"
+					prefWidth="59.0" text="가격 : " />
+				<Label layoutX="-27.0" layoutY="95.0" prefHeight="24.0"
+					prefWidth="83.0" text="이미지 경로 : " />
+				<TextField fx:id="menuName" layoutX="60.0" layoutY="7.0"
+					prefHeight="23.0" prefWidth="206.0" promptText="파스타" />
+				<TextField fx:id="menuPrice" layoutX="60.0" layoutY="52.0"
+					prefHeight="23.0" prefWidth="206.0" promptText="5000" />
+				<TextField fx:id="menuImg" layoutX="60.0" layoutY="97.0"
+					prefHeight="23.0" prefWidth="134.0" promptText="./image" />
+				<Button fx:id="file" layoutX="202.0" layoutY="97.0"
+					mnemonicParsing="false" prefHeight="23.0" prefWidth="61.0"
+					text="찾기" />
+				<Label layoutX="-27.0" layoutY="138.0" prefHeight="24.0"
+					prefWidth="83.0" text="상세설명" />
+				<TextArea fx:id="menuContent" layoutX="-27.0" layoutY="169.0"
+					prefHeight="101.0" prefWidth="293.0" />
+			</children>
+		</Group>
+		<Button fx:id="btnAdd" layoutX="41.0" layoutY="397.0"
+			mnemonicParsing="false" prefHeight="51.0" prefWidth="115.0"
+			text="추가하기" />
+		<Button fx:id="btnBack" layoutX="227.0" layoutY="397.0"
+			mnemonicParsing="false" prefHeight="51.0" prefWidth="115.0"
+			text="취소하기" />
+	</children>
+</AnchorPane>

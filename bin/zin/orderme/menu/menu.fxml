@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="zin.orderme.menu.MenuController">
+	<children>
+		<!-- 틀, 제목 -->
+		<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00"
+			height="237.0" layoutX="37.0" layoutY="88.0" stroke="BLACK"
+			strokeType="INSIDE" width="415.0" />
+		<Label layoutX="37.0" layoutY="26.0" prefHeight="53.0"
+			prefWidth="272.0" text="메뉴 편집">
+			<font>
+				<Font name="System Bold" size="35.0" />
+			</font>
+		</Label>
+
+		<!-- 메뉴 이미지 -->
+		<ImageView fx:id="menu_img_1" fitHeight="36.0"
+			fitWidth="54.0" layoutX="48.0" layoutY="100.0" pickOnBounds="true">
+			<image>
+				<Image url="zin/orderme/image/none_img.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="menu_img_2" fitHeight="36.0"
+			fitWidth="54.0" layoutX="48.0" layoutY="148.0" pickOnBounds="true">
+			<image>
+				<Image url="zin/orderme/image/none_img.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="menu_img_3" fitHeight="36.0"
+			fitWidth="54.0" layoutX="48.0" layoutY="198.0" pickOnBounds="true">
+			<image>
+				<Image url="zin/orderme/image/none_img.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="menu_img_4" fitHeight="36.0"
+			fitWidth="54.0" layoutX="48.0" layoutY="247.0" pickOnBounds="true">
+			<image>
+				<Image url="zin/orderme/image/none_img.png" />
+			</image>
+		</ImageView>
+
+		<!-- 메뉴명 -->
+		<Label fx:id="menu_name_1" layoutX="117.0" layoutY="104.0"
+			prefHeight="28.0" prefWidth="134.0" text="-" />
+		<Label fx:id="menu_name_2" layoutX="117.0" layoutY="152.0"
+			prefHeight="28.0" prefWidth="134.0" text="-" />
+		<Label fx:id="menu_name_3" layoutX="117.0" layoutY="202.0"
+			prefHeight="28.0" prefWidth="134.0" text="-" />
+		<Label fx:id="menu_name_4" layoutX="117.0" layoutY="251.0"
+			prefHeight="28.0" prefWidth="134.0" text="-" />
+
+
+		<!-- 메뉴가격 -->
+		<Label fx:id="menu_price_1" layoutX="253.0" layoutY="104.0"
+			prefHeight="28.0" prefWidth="94.0" text="-" />
+		<Label fx:id="menu_price_2" layoutX="253.0" layoutY="152.0"
+			prefHeight="28.0" prefWidth="94.0" text="-" />
+		<Label fx:id="menu_price_3" layoutX="253.0" layoutY="202.0"
+			prefHeight="28.0" prefWidth="94.0" text="-" />
+		<Label fx:id="menu_price_4" layoutX="253.0" layoutY="251.0"
+			prefHeight="28.0" prefWidth="94.0" text="-" />
+
+
+		<!-- 기타 조작 -->
+		<Button fx:id="btnMenuAdd" layoutX="469.0" layoutY="91.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0"
+			text="메뉴추가" />
+		<Button fx:id="btnBack" layoutX="469.0" layoutY="141.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0"
+			text="뒤로가기" />
+
+		<Line endX="235.0" layoutX="208.0" layoutY="141.0"
+			startX="-162.0" stroke="#00000034" />
+		<Line endX="235.0" layoutX="208.0" layoutY="191.0"
+			startX="-162.0" stroke="#00000034" />
+		<Line endX="235.0" layoutX="208.0" layoutY="241.0"
+			startX="-162.0" stroke="#00000034" />
+		<Line endX="235.0" layoutX="208.0" layoutY="291.0"
+			startX="-162.0" stroke="#00000034" />
+
+		<!-- 1번메뉴 -->
+		<ImageView fx:id="menu_edit_1" fitHeight="28.0"
+			fitWidth="27.0" layoutX="372.0" layoutY="105.0" pickOnBounds="true"
+			preserveRatio="true" AnchorPane.bottomAnchor="268.0"
+			AnchorPane.leftAnchor="372.0" AnchorPane.rightAnchor="201.0"
+			AnchorPane.topAnchor="105.0">
+			<image>
+				<Image url="zin/orderme/image/btn_edit.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="menu_del_1" fitHeight="28.0"
+			fitWidth="27.0" layoutX="413.0" layoutY="105.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/btn_delete.png" />
+			</image>
+		</ImageView>
+		<!-- 2번메뉴 -->
+		<ImageView fx:id="menu_del_2" fitHeight="28.0"
+			fitWidth="27.0" layoutX="413.0" layoutY="153.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/btn_delete.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="menu_edit_2" fitHeight="28.0"
+			fitWidth="27.0" layoutX="372.0" layoutY="153.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/btn_edit.png" />
+			</image>
+		</ImageView>
+		<!-- 3번메뉴 -->
+		<ImageView fx:id="menu_del_3" fitHeight="28.0"
+			fitWidth="27.0" layoutX="413.0" layoutY="203.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/btn_delete.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="menu_edit_3" fitHeight="28.0"
+			fitWidth="27.0" layoutX="372.0" layoutY="203.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/btn_edit.png" />
+			</image>
+		</ImageView>
+		<!-- 4번메뉴 -->
+		<ImageView fx:id="menu_del_4" fitHeight="28.0"
+			fitWidth="27.0" layoutX="413.0" layoutY="252.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/btn_delete.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="menu_edit_4" fitHeight="28.0"
+			fitWidth="27.0" layoutX="372.0" layoutY="252.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/btn_edit.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="btnLeft" fitHeight="26.0" fitWidth="26.0"
+			layoutX="48.0" layoutY="294.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/left.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="btnRight" fitHeight="26.0" fitWidth="26.0"
+			layoutX="421.0" layoutY="294.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="zin/orderme/image/right.png" />
+			</image>
+		</ImageView>
+		<Slider fx:id="menuSlider" layoutX="74.0" layoutY="300.0"
+			prefHeight="14.0" prefWidth="347.0" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<top>
+		<Label alignment="CENTER" text="URL확인" textAlignment="CENTER" BorderPane.alignment="CENTER">
+			<font>
+				<Font size="15.0" />
+			</font>
+			<BorderPane.margin>
+				<Insets />
+			</BorderPane.margin>
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</Label>
+	</top>
+	<center>
+		<VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label fx:id="ip" text="컴퓨터 IP : ">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin></Label>
+			</children>
+		</VBox>
+	</center>
+	<bottom>
+		<Button fx:id="btnOk" mnemonicParsing="false" text="확인" textAlignment="CENTER" BorderPane.alignment="CENTER">
+			<BorderPane.margin>
+				<Insets bottom="10.0" />
+			</BorderPane.margin>
+		</Button>
+	</bottom>
+</BorderPane>
